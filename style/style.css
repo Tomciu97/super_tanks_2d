@@ -19,6 +19,7 @@ header {
     border-bottom: 1px black solid;
 }
 
+/* map css */
 main {
     height: 100%;
     width: 100%;
@@ -36,13 +37,18 @@ main {
     width: 100%;
 }
 
+/* tank css */
 #tank {
-    width: 75px;
-    height: 85px;
+    width: 85px;
+    height: 75px;
     background-color: gold;
     display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
 
 #turret {
@@ -50,4 +56,19 @@ main {
     height: 50px;
     border-radius: 50%;
     background-color: goldenrod;
+    position: relative;
+}
+
+#gun {
+    position: absolute;
+    top: 20px;
+    height: 10px;
+    width: 120px;
+    background-color: goldenrod;
+}
+
+.track {
+    height: 5px;
+    background-color: black;
+    width: 100%;
 }
